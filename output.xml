@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220209 08:57:44.748" rpa="false" schemaversion="2">
+<suite id="s1" name="Orange Hrmm Suite" source="C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\selenium_suite\orange_hrmm_suite.robot">
+<test id="s1-t1" name="TC1 Valid Login">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>path</arg>
+<arg>${EXECDIR}\\drivers</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220209 08:57:44.985" level="INFO">Environment variable 'path' set to value 'C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\venv\Scripts;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin;C:\Program Files\Git\cmd;C:\Users\Sindhumathi\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Sindhumathi\AppData\Local\Programs\Python\Python310\;C:\Users\Sindhumathi\AppData\Local\Microsoft\WindowsApps;C:\Users\Sindhumathi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sindhumathi\AppData\Local\GitHubDesktop\bin;C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\drivers'.</msg>
+<status status="PASS" starttime="20220209 08:57:44.984" endtime="20220209 08:57:44.985"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://opensource-demo.orangehrmlive.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220209 08:57:44.985" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220209 08:57:44.985" endtime="20220209 08:57:52.160"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 08:57:52.161" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20220209 08:57:52.161" endtime="20220209 08:57:52.227"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 08:57:52.228" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20220209 08:57:52.261" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220209 08:57:52.295" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220209 08:57:52.228" endtime="20220209 08:57:52.295"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=Submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220209 08:57:52.296" level="INFO">Clicking element 'name=Submit'.</msg>
+<status status="PASS" starttime="20220209 08:57:52.295" endtime="20220209 08:57:53.788"/>
+</kw>
+<status status="PASS" starttime="20220209 08:57:44.984" endtime="20220209 08:57:53.790"/>
+</test>
+<status status="PASS" starttime="20220209 08:57:44.750" endtime="20220209 08:57:53.791"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Orange Hrmm Suite">Orange Hrmm Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220208 15:03:55.403" rpa="false" schemaversion="2">
+<suite id="s1" name="Orange Hrm Suite" source="C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\selenium_suite\orange_hrm_suite.robot">
+<test id="s1-t1" name="TC1 Valid Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220208 15:03:55.608" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<msg timestamp="20220208 15:03:55.608" level="INFO">Firefox driver log is always forced to to: C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\selenium_suite\geckodriver-2.log</msg>
+<msg timestamp="20220208 15:03:55.630" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220208 15:03:55.630" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20220208 15:03:55.608" endtime="20220208 15:03:55.630"/>
+</kw>
+<status status="FAIL" starttime="20220208 15:03:55.608" endtime="20220208 15:03:55.630">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<status status="FAIL" starttime="20220208 15:03:55.405" endtime="20220208 15:03:55.630"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Orange Hrm Suite">Orange Hrm Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
