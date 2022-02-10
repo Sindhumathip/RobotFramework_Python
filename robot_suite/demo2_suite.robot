@@ -1,6 +1,7 @@
 *** Variables ***
 ${MY_NAME}      Sindhumathi Paramasivam
-@{COLORS}    yellow    green    red
+@{COLORS}    yellow    green    red    blue    pink
+
 
 
 *** Test Cases ***
@@ -17,8 +18,18 @@ TC1
     Log To Console    ${COLORS}[0]
 
 TC2
+    ${count}    Get Length    ${COLORS}
+    Log To Console    ${count}
 
-  FOR    ${counter}    IN RANGE    0    3    1
-      Log    ${counter}
+  FOR    ${i}    IN RANGE    0    ${count}    1
+      Log To Console    ${COLORS}[${i}]
 
   END
+
+TC3
+  FOR    ${color}    IN    @{COLORS}
+      Log To Console    ${color}
+
+  END
+
+
