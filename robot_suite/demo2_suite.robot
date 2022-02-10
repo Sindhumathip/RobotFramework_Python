@@ -15,3 +15,10 @@ TC1
     Log To Console    ${MY_NAME}
     Log To Console    ${COLORS}
     Log To Console    ${COLORS}[0]
+
+TC2
+
+  FOR    ${counter}    IN RANGE    0    3    1
+      Log    ${counter}
+
+  END
