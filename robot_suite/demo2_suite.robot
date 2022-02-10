@@ -1,7 +1,9 @@
+*** Settings ***
+Library  Collections
 *** Variables ***
 ${MY_NAME}      Sindhumathi Paramasivam
 @{COLORS}    yellow    green    red    blue    pink
-
+&{EMPLOYEE1}    empid=101    empname=sindhu    age=21
 
 
 *** Test Cases ***
@@ -32,4 +34,8 @@ TC3
 
   END
 
-
+TC4
+    Log To Console    ${EMPLOYEE1}
+    Log To Console    ${EMPLOYEE1}[empname]
+    Log To Console    The employee age is ${EMPLOYEE1}[age]
+    Log Dictionary    ${EMPLOYEE1}
