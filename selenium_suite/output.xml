@@ -1,20 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220208 15:03:55.403" rpa="false" schemaversion="2">
-<suite id="s1" name="Orange Hrm Suite" source="C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\selenium_suite\orange_hrm_suite.robot">
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220210 12:12:57.565" rpa="false" schemaversion="2">
+<suite id="s1" name="Openemr Suite" source="C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\selenium_suite\openemr_suite.robot">
 <test id="s1-t1" name="TC1 Valid Login">
 <kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://demo.openemr.io/b/openemr/index.php</arg>
+<arg>browser=chrome</arg>
+<arg>executable_path=${EXECDIR}\\drivers\\chromedriver</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220208 15:03:55.608" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
-<msg timestamp="20220208 15:03:55.608" level="INFO">Firefox driver log is always forced to to: C:\Users\Sindhumathi\PycharmProjects\ROBOTFRAMEWORK\selenium_suite\geckodriver-2.log</msg>
-<msg timestamp="20220208 15:03:55.630" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20220208 15:03:55.630" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+<msg timestamp="20220210 12:12:57.826" level="INFO">Opening browser 'chrome' to base url 'https://demo.openemr.io/b/openemr/index.php'.</msg>
+<msg timestamp="20220210 12:12:57.878" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220210 12:12:57.882" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </msg>
-<status status="FAIL" starttime="20220208 15:03:55.608" endtime="20220208 15:03:55.630"/>
+<status status="FAIL" starttime="20220210 12:12:57.826" endtime="20220210 12:12:57.882"/>
 </kw>
-<status status="FAIL" starttime="20220208 15:03:55.608" endtime="20220208 15:03:55.630">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.917" endtime="20220210 12:12:57.917"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.917" endtime="20220210 12:12:57.917"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=authUser</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.917" endtime="20220210 12:12:57.917"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=clearPass</arg>
+<arg>pass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.918" endtime="20220210 12:12:57.918"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=languageChoice</arg>
+<arg>English (Indian)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.918" endtime="20220210 12:12:57.918"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="login_form"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.918" endtime="20220210 12:12:57.918"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.918" endtime="20220210 12:12:57.918"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.918" endtime="20220210 12:12:57.918"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>OpenEMR</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.918" endtime="20220210 12:12:57.918"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220210 12:12:57.919" endtime="20220210 12:12:57.919"/>
+</kw>
+<status status="FAIL" starttime="20220210 12:12:57.826" endtime="20220210 12:12:57.919">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </status>
 </test>
-<status status="FAIL" starttime="20220208 15:03:55.405" endtime="20220208 15:03:55.630"/>
+<status status="FAIL" starttime="20220210 12:12:57.566" endtime="20220210 12:12:57.920"/>
 </suite>
 <statistics>
 <total>
@@ -23,7 +76,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Orange Hrm Suite">Orange Hrm Suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Openemr Suite">Openemr Suite</stat>
 </suite>
 </statistics>
 <errors>
