@@ -6,11 +6,11 @@ working with  local variable scalar, list, dic
 
 *** Test Cases ***
 TC1
-    Set Local Variable    ${firstname}       chandana
-    ${lastname}     Set Variable    suresh
+    Set Local Variable    ${firstname}       sindhu
+    ${lastname}     Set Variable    mathi
     Log To Console    ${firstname} ${lastname}
 
-    @{fruits}   Create List    apple    banana     grapes
+    @{fruits}   Create List    orange    apple     grapes
     Log To Console    ${fruits}
     Log To Console    ${fruits}[0]
 
@@ -25,5 +25,5 @@ TC1
 TC2
     Log To Console    ${otp}
 #    Log List   ${fruits}
-    &{dic}   Create Dictionary   firstname=chandana    lastname=suresh   mobile=9876543210
+    &{dic}   Create Dictionary   firstname=sindhu   lastname=mathi   mobile=636922977
     Log To Console    ${dic}[lastname]

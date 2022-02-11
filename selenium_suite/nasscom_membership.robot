@@ -30,7 +30,7 @@ TC1
 
    Alert Should Be Present    Please enter amount in digit and greater than zero.   action=ACCEPT
 
-   Choose File    id=edit-field-memorandum-article-of-asso-und-0-upload    file_path=C:\\Users\\Chandhana\\OneDrive\\Desktop\\CS Docs\\aadhar acknowledge.pdf
+   Choose File    id=edit-field-memorandum-article-of-asso-und-0-upload    file_path=C:\\Users\\Sindhumathi\\OneDrive\\Desktop\\CS Docs\\aadhar acknowledge.pdf
 
    Sleep    25s
    Close Browser
